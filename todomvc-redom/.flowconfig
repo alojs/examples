@@ -1,7 +1,8 @@
 [ignore]
-
+<PROJECT_ROOT>/node_modules/.*
+<PROJECT_ROOT>/libdefs.js
 [include]
 
 [libs]
-
+./libdefs.js
 [options]

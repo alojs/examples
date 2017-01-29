@@ -9,19 +9,19 @@ const initialState: { route: string } = {
   /**
    * Holds just the name of the current route
    */
-  route: ''
+  route: 'loading'
 }
 
 export var routerStore = alo.createStore(initialState, 'router')
-// routerStore.addMiddleware(thunkMiddleware)
+routerStore.addMiddleware(thunkMiddleware)
 
 /**
  * Returns an action object, which can be dispatched on the router to set a specific route
  */
-export var setRoute = function (route: string): { type: string, payload: string } {
+export var setRoute = function (options: { route: string }): { type: string, payload: string } {
   return {
     type: 'setRoute',
-    payload: route
+    payload: options.route
   }
 }
 
@@ -29,7 +29,6 @@ export var setRoute = function (route: string): { type: string, payload: string 
  * Route reducer
  */
 export var routeReducer = routerStore.createReducer(function (state, action) {
-  console.log('dispatch', action)
   switch (action.type) {
     case 'setRoute':
       state.route = action.payload
@@ -38,13 +37,3 @@ export var routeReducer = routerStore.createReducer(function (state, action) {
 
   return state
 })
-
-console.log('router')
-routerStore.dispatch(setRoute('loading')).catch(function(err) {
-  console.error(err)
-}).then(function() {
-  console.log('dispatch done')
-})
-
-window.routerStore = routerStore
-window.alo = alo

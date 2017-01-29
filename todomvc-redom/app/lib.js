@@ -1,6 +1,6 @@
 // @flow
 
-import Alo from 'alo/dist/alo.full.dev.js'
+import Alo from 'alo'
 
 /**
  * Alo instance for this app
