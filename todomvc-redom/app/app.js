@@ -88,7 +88,7 @@ class Header {
     this.el = el(`header.header`)
     this.elNewTodoInput = el(`input.${todomvcStyles['new-todo']}`, {
       placeholder: "What needs to be done?",
-      autofocus: 'autofocus',
+      autofocus: true,
       oninput: onNewTodoInput,
       onchange: onNewTodoInput,
       onkeypress: function(e) {
@@ -106,7 +106,7 @@ class Header {
     this.update()
   }
   update (state) {
-    this.elTitle.textContent = 'Todos'
+    this.elTitle.textContent = 'todos'
 
     if (state) {
       if (state.newTodo) {
@@ -263,6 +263,11 @@ class App {
       'app': function(stores) {
         return stores.app
       },
+      'hasTodos': function(stores) {
+        if (stores.todos.state && stores.todos.state.length > 0) {
+          return true
+        }
+      },
       'allCompleted': function(stores) {
         if (stores.todos.computed.notCompleteCount) {
           return stores.todos.computed.notCompleteCount == 0
@@ -289,7 +294,7 @@ class App {
         setChildren(this.el, [
           this.elHeader,
           this.elMain,
-          this.elFooter
+          (computed.hasTodos)? this.elFooter: null
         ])
         break
     }

@@ -785,25 +785,6 @@ doctrine@1.2.x, doctrine@^1.2.2:
     esutils "^2.0.2"
     isarray "^1.0.0"
 
-domnode-dom@~0.0.X:
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/domnode-dom/-/domnode-dom-0.0.4.tgz#4c66d26eaf1e4f1af56ede8593ec4fbfcd9d8e8f"
-  dependencies:
-    domnode "~0.0.3"
-
-domnode@~0.0.3:
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/domnode/-/domnode-0.0.3.tgz#a8bb0d8ea8d494455d0c1fb22e5645c64db0c4be"
-  dependencies:
-    mustache "0.4.0"
-
-drag-stream@0.0.3:
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/drag-stream/-/drag-stream-0.0.3.tgz#3629b97d619b0b46038437d69797bd86a825c5ae"
-  dependencies:
-    domnode-dom "~0.0.X"
-    through "~2.2.1"
-
 duplexer@~0.1.1:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/duplexer/-/duplexer-0.1.1.tgz#ace6ff808c1ce66b57d1ebf97977acb02334cfc1"
@@ -1287,10 +1268,6 @@ fstream@^1.0.0, fstream@^1.0.2, fstream@~1.0.10:
     mkdirp ">=0.5 0"
     rimraf "2"
 
-fullscreen@0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/fullscreen/-/fullscreen-0.0.1.tgz#a368c7f6d4d5d0ea55f021c926cae558370bf04f"
-
 gauge@~2.7.1:
   version "2.7.2"
   resolved "https://registry.yarnpkg.com/gauge/-/gauge-2.7.2.tgz#15cecc31b02d05345a5d6b0e171cdb3ad2307774"
@@ -1542,13 +1519,9 @@ inquirer@^0.12.0:
     strip-ansi "^3.0.0"
     through "^2.3.6"
 
-interact@^0.0.3:
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/interact/-/interact-0.0.3.tgz#6d4eae8133683a9799d4760f01626a5f5d51da22"
-  dependencies:
-    drag-stream "0.0.3"
-    fullscreen "0.0.1"
-    pointer-lock "0.0.3"
+interactjs@^1.2.8:
+  version "1.2.8"
+  resolved "https://registry.yarnpkg.com/interactjs/-/interactjs-1.2.8.tgz#f28d9c6b083013daae3c77f026204f9dd1983ed9"
 
 interpret@^1.0.0:
   version "1.0.1"
@@ -2072,10 +2045,6 @@ ms@0.7.1:
   version "0.7.1"
   resolved "https://registry.yarnpkg.com/ms/-/ms-0.7.1.tgz#9cd13c03adbff25b65effde7ce864ee952017098"
 
-mustache@0.4.0:
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/mustache/-/mustache-0.4.0.tgz#49eb3bc60fd41119c50c87aa7067ef63d1592bdd"
-
 mute-stream@0.0.5:
   version "0.0.5"
   resolved "https://registry.yarnpkg.com/mute-stream/-/mute-stream-0.0.5.tgz#8fbfabb0a98a253d3184331f9e8deb7372fac6c0"
@@ -2333,10 +2302,6 @@ pkg-up@^1.0.0:
 pluralize@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/pluralize/-/pluralize-1.2.1.tgz#d1a21483fd22bb41e58a12fa3421823140897c45"
-
-pointer-lock@0.0.3:
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/pointer-lock/-/pointer-lock-0.0.3.tgz#2b0675ca4824c3de50972d1a28309be7ce0a35f7"
 
 polymorphic@^1.4.0:
   version "1.4.0"
@@ -3040,10 +3005,6 @@ through2@^2.0.0:
 through@2, through@^2.3.6, through@~2.3, through@~2.3.1:
   version "2.3.8"
   resolved "https://registry.yarnpkg.com/through/-/through-2.3.8.tgz#0dd4c9ffaabc357960b1b724115d7e0e86a2e1f5"
-
-through@~2.2.1:
-  version "2.2.7"
-  resolved "https://registry.yarnpkg.com/through/-/through-2.2.7.tgz#6e8e21200191d4eb6a99f6f010df46aa1c6eb2bd"
 
 timed-out@^2.0.0:
   version "2.0.0"
